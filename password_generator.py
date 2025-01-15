@@ -22,7 +22,6 @@ def generate_password(length, use_letters, use_digits, use_punctuation):
         raise ValueError("No character types selected!")
     
     password = "".join(random.choice(chars) for _ in range(length))
-    print(chars)
     return password
 
 
