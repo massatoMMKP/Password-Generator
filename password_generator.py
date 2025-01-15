@@ -29,8 +29,8 @@ def main():
     while True:
         try:
             length = int(input("Enter the length of the password: "))
-            if length <= 0:
-                print("Password length must be greater than 0.")
+            if length < 3:
+                print("Password length must be greater than 3.")
                 continue
             break
         except ValueError:
